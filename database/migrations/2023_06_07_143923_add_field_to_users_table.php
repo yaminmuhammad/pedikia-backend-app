@@ -16,7 +16,8 @@ class AddFieldToUsersTable extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('phone')->after('name');
             $table->string('address')->after('phone');
-            $table->string('roles')->after('address');
+            $table->string('city')->after('address');
+            $table->string('roles')->after('city');
         });
     }
 
@@ -30,6 +31,7 @@ class AddFieldToUsersTable extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('phone');
             $table->dropColumn('address');
+            $table->dropColumn('city');
             $table->dropColumn('roles');
         });
     }
