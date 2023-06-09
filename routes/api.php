@@ -25,3 +25,4 @@ Route::get('service', [ServiceController::class, 'all']);
 Route::get('categories', [ServiceCategoryController::class, 'all']);
 
 Route::post('register', [UserController::class, 'register']);
+Route::post('login', [UserController::class, 'login']);
