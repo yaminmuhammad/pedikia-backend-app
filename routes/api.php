@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\ServiceCategoryController;
 use App\Http\Controllers\API\ServiceController;
+use App\Http\Controllers\API\TransactionController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
