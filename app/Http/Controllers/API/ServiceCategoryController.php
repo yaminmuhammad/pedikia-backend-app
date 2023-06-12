@@ -13,7 +13,7 @@ class ServiceCategoryController extends Controller
     {
         $id = $request->input('id');
         $limit = $request->input('limit');
-        $name = $request->input('id');
+        $name = $request->input('name');
         $show_service = $request->input('show_service');
 
         if ($id) {
